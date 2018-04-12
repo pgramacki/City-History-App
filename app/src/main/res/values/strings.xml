@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">DlaEwy</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="button_map">MAP</string>
+    <string name="button_qr">QR</string>
+    <string name="wrong_qr">WRONG QR CODE</string>
+    <string name="tab_gallery">GALLERY</string>
+    <string name="tab_info">INFO</string>
+    <string name="tab_history">HISTORY</string>
+    <string name="some_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae
+        pharetra purus, et faucibus ligula. Proin nec magna vel ligula. </string>
+    <string name="lots_of_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam
+        arcu, viverra et massa at, auctor iaculis nulla. Sed at laoreet ex. Proin in pharetra arcu,
+        viverra aliquam urna. Curabitur et elit turpis. Nulla sodales molestie elit, a venenatis
+        urna rutrum eu. Nulla sit amet ipsum a tortor posuere malesuada id augue. Morbi pharetra
+        odio nec elit consequat hendrerit. Proin mauris diam, porta in magna sed, ultrices imperdiet
+        urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos. In consequat elit nec tortor luctus, gravida cursus libero placerat. Proin sed
+        ante non tortor efficitur vehicula. Pellentesque habitant morbi tristique senectus et netus
+        et malesuada fames ac turpis egestas. In sed laoreet metus, vel hendrerit neque. Phasellus
+        mattis blandit mi, et elementum risus malesuada ac. Donec mollis condimentum molestie.
+        Phasellus vestibulum purus nec diam ultrices, in mollis augue dictum.\n\n
+
+        Integer at eleifend purus. Fusce scelerisque risus sit amet neque maximus tempus. Sed
+        bibendum massa id sem suscipit maximus. Phasellus accumsan justo a enim malesuada pulvinar.
+        Duis in pharetra massa, vitae facilisis lacus. Sed justo sapien, vulputate eget volutpat
+        sed, eleifend ut sem. Etiam nec ex ipsum. Sed quis luctus metus. Sed enim urna, convallis at
+        erat vel, facilisis faucibus urna. Proin cursus urna ut turpis consequat rutrum. Cras vel
+        neque ante. Etiam ante eros, convallis mollis nibh et, feugiat finibus odio.\n\n
+
+        Mauris est libero, mollis luctus neque et, bibendum mattis enim. Aenean vulputate tincidunt
+        nunc, in facilisis metus viverra vel. Cras in lectus nunc. Phasellus vitae velit venenatis,
+        vestibulum mi in, faucibus lacus. Curabitur ornare erat dolor, eu egestas velit laoreet ac.
+        Sed suscipit eu lorem id egestas. Etiam dapibus laoreet tincidunt. Sed malesuada mauris nec
+        dolor pulvinar maximus. Integer consectetur, ex sagittis congue volutpat, velit augue
+        consequat erat, sit amet porttitor risus est non risus. Fusce lobortis velit quam, a
+        facilisis tortor porta sit amet. Vivamus dictum mollis fringilla. \n\n
+
+        Nam semper bibendum mi, at rutrum mauris fermentum id. Mauris elementum eu nisl imperdiet
+        ultrices. Integer fermentum diam tellus, in commodo eros condimentum pretium. Vestibulum ut
+        porttitor magna. In sit amet nulla ut nibh cursus vestibulum. Donec egestas consectetur
+        purus, sed porttitor lacus ultrices at. Cras accumsan, lorem et ultricies convallis, mauris
+        dui semper nisi, id tempor elit nisl eget odio. Vestibulum aliquam nec risus in ultrices.
+        In hendrerit dignissim tortor, sit amet consectetur arcu scelerisque eget. Cras fermentum
+        tellus vel nisi dapibus dignissim. Maecenas fringilla a lectus non egestas. In eu est vitae
+        nisl ornare pharetra. Vestibulum sagittis ante elit, nec feugiat nulla scelerisque nec.
+        Sed consequat, massa eget posuere finibus, metus nunc porta quam, elementum cursus lectus
+        ex nec quam. </string>
+
+    <string-array name="names">
+        <item>BACHUS</item>
+        <item>KUPIECKA</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Pomnik bachusa, dawniej grzybek - najbardziej znane miejsce spotkan w Zielonej Gorze</item>
+        <item>Pierwsza sygnalizacja swietlna</item>
+    </string-array>
+
+    <string-array name="latitudes">
+        <item>51.940011</item>
+        <item>51.941095</item>
+    </string-array>
+
+    <string-array name="longitudes">
+        <item>15.506554</item>
+        <item>15.504484</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
