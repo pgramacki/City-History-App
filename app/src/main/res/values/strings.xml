@@ -4,6 +4,7 @@
     <string name="button_map">MAP</string>
     <string name="button_qr">QR</string>
     <string name="wrong_qr">WRONG QR CODE</string>
+    <string name="data_error">DATA ERROR</string>
     <string name="tab_gallery">GALLERY</string>
     <string name="tab_info">INFO</string>
     <string name="tab_history">HISTORY</string>
@@ -46,27 +47,4 @@
         nisl ornare pharetra. Vestibulum sagittis ante elit, nec feugiat nulla scelerisque nec.
         Sed consequat, massa eget posuere finibus, metus nunc porta quam, elementum cursus lectus
         ex nec quam. </string>
-
-    <string-array name="names">
-        <item>BACHUS</item>
-        <item>KUPIECKA</item>
-    </string-array>
-
-    <string-array name="descriptions">
-        <item>Pomnik bachusa, dawniej grzybek - najbardziej znane miejsce spotkan w Zielonej Gorze</item>
-        <item>Pierwsza sygnalizacja swietlna</item>
-    </string-array>
-
-    <string-array name="latitudes">
-        <item>51.940011</item>
-        <item>51.941095</item>
-    </string-array>
-
-    <string-array name="longitudes">
-        <item>15.506554</item>
-        <item>15.504484</item>
-    </string-array>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

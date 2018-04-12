@@ -2,6 +2,7 @@ package com.example.piotrgramacki.dlaewy;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.content.res.XmlResourceParser;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -70,14 +74,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void readDataFromResources() {
         Resources res = getResources();
-        PlacesManager.setPlaces(
-                res.getStringArray(R.array.latitudes),
-                res.getStringArray(R.array.longitudes),
-                res.getStringArray(R.array.names),
-                res.getStringArray(R.array.descriptions),
-                res.getString(R.string.lots_of_text)
-        );
-        places = PlacesManager.getPlaces();
+        try {
+            XmlResourceParser parser = res.getXml(R.xml.data);
+            PlacesManager.readFromXml(parser);
+            places = PlacesManager.getPlaces();
+        } catch (Exception e) {
+            Toast.makeText(
+                    getApplicationContext(),
+                    getString(R.string.data_error),
+                    Toast.LENGTH_LONG).show();
+        }
     }
 
     private int getIndex(String content) {

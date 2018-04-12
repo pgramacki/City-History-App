@@ -1,5 +1,10 @@
 package com.example.piotrgramacki.dlaewy;
 
+import android.content.res.XmlResourceParser;
+
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -7,35 +12,16 @@ import java.util.ArrayList;
  */
 
 public abstract class PlacesManager {
-    private static ArrayList<Place> places;
-
-    //private PlacesManager() {}
-
-    public static void setPlaces(String[] latitudes, String[] longitudes, String[] names, String[] descriptions, String history) {
-        //TODO - change into array of histories
-        //TODO - change it to private when xml parser is done
-        if (places == null) {
-            places = new ArrayList<>();
-
-            int size = latitudes.length;
-            if (longitudes.length < size)
-                size = longitudes.length;
-            if (names.length < size)
-                size = names.length;
-            if (descriptions.length < size)
-                size = descriptions.length;
-
-            for (int i = 0; i < size; i++)
-                places.add(new Place(
-                        Double.parseDouble(latitudes[i]),
-                        Double.parseDouble(longitudes[i]),
-                        names[i],
-                        descriptions[i],
-                        history));
-        }
-    }
+    private static ArrayList<Place> places = null;
 
     public static ArrayList<Place> getPlaces() {
         return places;
+    }
+
+    public static void readFromXml(XmlResourceParser xrp) throws IOException, XmlPullParserException {
+        if (places == null) {
+            DataXmlParser parser = new DataXmlParser(xrp);
+            places = parser.parse();
+        }
     }
 }
