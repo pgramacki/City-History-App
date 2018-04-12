@@ -44,16 +44,16 @@ public class InfoGeneralFragment extends Fragment {
     }
 
     private void setData() {
-        description.setText(getArguments().getString(AppConstants.INFO_DESCR));
+        description.setText(PlacesManager.getPlaces().get(getArguments().getInt(AppConstants.PLACE_ID)).getDescription());
         oldPhoto.setImageResource(getArguments().getInt(AppConstants.INFO_OLD_PHOTO));
         newPhoto.setImageResource(getArguments().getInt(AppConstants.INFO_NEW_PHOTO));
     }
 
-    public static InfoGeneralFragment newInstance(String description, int oldPhoto, int newPhoto) {
+    public static InfoGeneralFragment newInstance(int index, int oldPhoto, int newPhoto) {
         InfoGeneralFragment instance = new InfoGeneralFragment();
 
         Bundle bundle = new Bundle();
-        bundle.putString(AppConstants.INFO_DESCR, description);
+        bundle.putInt(AppConstants.PLACE_ID, index);
         bundle.putInt(AppConstants.INFO_OLD_PHOTO, oldPhoto);
         bundle.putInt(AppConstants.INFO_NEW_PHOTO, newPhoto);
 

@@ -32,14 +32,14 @@ public class InfoHistoryFragment extends Fragment {
     }
 
     private void setData() {
-        history.setText(getArguments().getString(AppConstants.INFO_HISTORY));
+        history.setText(PlacesManager.getPlaces().get(getArguments().getInt(AppConstants.PLACE_ID)).getHistory());
     }
 
-    public static InfoHistoryFragment newInstance(String history) {
+    public static InfoHistoryFragment newInstance(int index) {
         InfoHistoryFragment instance = new InfoHistoryFragment();
 
         Bundle bundle = new Bundle();
-        bundle.putString(AppConstants.INFO_HISTORY, history);
+        bundle.putInt(AppConstants.PLACE_ID, index);
         instance.setArguments(bundle);
 
         return instance;

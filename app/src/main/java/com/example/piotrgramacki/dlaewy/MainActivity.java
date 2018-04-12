@@ -34,15 +34,12 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 String content = data.getStringExtra(AppConstants.RESULT_QR);
                 int index = getIndex(content);
-                if (index != -1 && index < places.size()) {
+                if (index != -1 && index < places.size() && index >= 0) {
                     Intent intent = new Intent(this, InfoActivity.class);
-                    intent.putExtra(AppConstants.PLACE_NAME, places.get(index).getName());
-                    intent.putExtra(AppConstants.PLACE_DESCR, places.get(index).getDescription());
-                    intent.putExtra(AppConstants.PLACE_HISTORY, places.get(index).getHistory());
-                    //TODO - add passing pictures to info activity
+                    intent.putExtra(AppConstants.PLACE_ID, index);
                     startActivity(intent);
-                }
-                else Toast.makeText(getApplicationContext(), getText(R.string.wrong_qr), Toast.LENGTH_LONG).show();
+                } else
+                    Toast.makeText(getApplicationContext(), getText(R.string.wrong_qr), Toast.LENGTH_LONG).show();
             }
         }
     }

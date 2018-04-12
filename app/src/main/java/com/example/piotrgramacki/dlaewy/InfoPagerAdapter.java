@@ -22,11 +22,11 @@ public class InfoPagerAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0: return InfoGalleryFragment.newInstance();
             case 1: return InfoGeneralFragment.newInstance(
-                    extras.getString(AppConstants.PLACE_DESCR),
+                    extras.getInt(AppConstants.PLACE_ID),
                     R.drawable.sample_0,
                     R.drawable.sample_1);
             default: return InfoHistoryFragment.newInstance(
-                    extras.getString(AppConstants.PLACE_HISTORY));
+                    extras.getInt(AppConstants.PLACE_ID));
         }
     }
 

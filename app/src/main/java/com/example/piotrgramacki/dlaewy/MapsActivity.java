@@ -45,17 +45,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                for (Pair<Marker, Place> pair :
-                        markers) {
-                    if (pair.first.equals(marker)) {
-                        intent.putExtra(AppConstants.PLACE_NAME, pair.second.getName());
-                        intent.putExtra(AppConstants.PLACE_DESCR, pair.second.getDescription());
-                        intent.putExtra(AppConstants.PLACE_HISTORY, pair.second.getHistory());
+                for (int i = 0; i < markers.size(); i++) {
+                    if (markers.get(i).first.equals(marker)) {
+                        intent.putExtra(AppConstants.PLACE_ID, i);
                         startActivity(intent);
                         return true;
                     }
                 }
                 return false;
+                //TODO - maybe it is possible to remove storing pairs and keep only markers
             }
         });
     }

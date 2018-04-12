@@ -30,7 +30,7 @@ public class InfoActivity extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(pager);
 
-        setTitle(getIntent().getExtras().getString(AppConstants.PLACE_NAME));
+        setTitle(PlacesManager.getPlaces().get(getIntent().getExtras().getInt(AppConstants.PLACE_ID)).getName());
     }
 
     private void setData() {

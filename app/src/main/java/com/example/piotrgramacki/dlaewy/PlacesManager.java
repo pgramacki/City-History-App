@@ -6,13 +6,14 @@ import java.util.ArrayList;
  * Created by Piotrek on 2018-04-06.
  */
 
-public class PlacesManager {
+public abstract class PlacesManager {
     private static ArrayList<Place> places;
 
-    private PlacesManager() {}
+    //private PlacesManager() {}
 
     public static void setPlaces(String[] latitudes, String[] longitudes, String[] names, String[] descriptions, String history) {
         //TODO - change into array of histories
+        //TODO - change it to private when xml parser is done
         if (places == null) {
             places = new ArrayList<>();
 
