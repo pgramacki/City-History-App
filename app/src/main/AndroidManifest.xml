@@ -44,13 +44,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.piotrgramacki.dlaewy.MainActivity" />
         </activity>
-        <activity
-            android:name=".InfoActivity">
+        <activity android:name=".InfoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MapsActivity" />
         </activity>
         <activity android:name=".QrCodeScannerActivity" />
+        <activity android:name=".GalleryActivity"></activity>
     </application>
 
 </manifest>

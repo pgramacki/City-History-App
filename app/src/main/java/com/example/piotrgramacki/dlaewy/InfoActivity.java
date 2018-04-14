@@ -1,5 +1,6 @@
 package com.example.piotrgramacki.dlaewy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentActivity;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 public class InfoActivity extends AppCompatActivity implements InfoGalleryFragment.OnPhotoClickListener {
     TabLayout tabLayout;
     ViewPager pager;
+    int placeId = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,11 @@ public class InfoActivity extends AppCompatActivity implements InfoGalleryFragme
 
         tabLayout.setupWithViewPager(pager);
 
-        setTitle(PlacesManager.getPlaces().get(getIntent().getExtras().getInt(AppConstants.PLACE_ID)).getName());
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            placeId = extras.getInt(AppConstants.PLACE_ID);
+            setTitle(PlacesManager.getPlaces().get(placeId).getName());
+        }
     }
 
     private void setData() {
@@ -40,6 +46,9 @@ public class InfoActivity extends AppCompatActivity implements InfoGalleryFragme
 
     @Override
     public void onPhotoCLick(int position) {
-        Toast.makeText(getApplicationContext(), "" + position, Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, GalleryActivity.class);
+        intent.putExtra(AppConstants.PLACE_ID, placeId);
+        intent.putExtra(AppConstants.GALLERY_POSITION, position / 2);
+        startActivity(intent);
     }
 }
