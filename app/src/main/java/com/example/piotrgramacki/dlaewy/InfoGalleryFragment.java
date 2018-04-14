@@ -1,11 +1,13 @@
 package com.example.piotrgramacki.dlaewy;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 /**
@@ -27,6 +29,17 @@ public class InfoGalleryFragment extends Fragment {
             R.drawable.sample_4, R.drawable.sample_5,
             R.drawable.sample_6, R.drawable.sample_7
     };
+    private OnPhotoClickListener listener;
+
+    public interface OnPhotoClickListener {
+        void onPhotoCLick(int position);
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        listener = (OnPhotoClickListener) context;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -52,6 +65,11 @@ public class InfoGalleryFragment extends Fragment {
     }
 
     private void setListeners() {
-        //TODO - onclick listener for grid item
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                listener.onPhotoCLick(position);
+            }
+        });
     }
 }

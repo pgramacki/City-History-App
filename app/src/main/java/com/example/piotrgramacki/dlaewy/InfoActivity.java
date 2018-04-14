@@ -8,8 +8,9 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class InfoActivity extends AppCompatActivity {
+public class InfoActivity extends AppCompatActivity implements InfoGalleryFragment.OnPhotoClickListener {
     TabLayout tabLayout;
     ViewPager pager;
 
@@ -35,5 +36,10 @@ public class InfoActivity extends AppCompatActivity {
 
     private void setData() {
 
+    }
+
+    @Override
+    public void onPhotoCLick(int position) {
+        Toast.makeText(getApplicationContext(), "" + position, Toast.LENGTH_LONG).show();
     }
 }
