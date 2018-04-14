@@ -11,12 +11,29 @@ public class Place {
     private String name;
     private String description;
     private String history;
+    private int[] images = {
+            R.drawable.sample_2, R.drawable.sample_3,
+            R.drawable.sample_4, R.drawable.sample_5,
+            R.drawable.sample_6, R.drawable.sample_7,
+            R.drawable.sample_0, R.drawable.sample_1,
+            R.drawable.sample_2, R.drawable.sample_3,
+            R.drawable.sample_4, R.drawable.sample_5,
+            R.drawable.sample_6, R.drawable.sample_7,
+            R.drawable.sample_0, R.drawable.sample_1,
+            R.drawable.sample_2, R.drawable.sample_3,
+            R.drawable.sample_4, R.drawable.sample_5,
+            R.drawable.sample_6, R.drawable.sample_7
+    };
+    private int oldPhoto;
+    private int newPhoto;
 
     public Place(double latitude, double longitude, String name, String description, String history) {
         this.coordinates = new LatLng(latitude, longitude);
         this.name = name;
         this.description = description;
         this.history = history;
+        oldPhoto = R.drawable.sample_0;
+        newPhoto = R.drawable.sample_1;
     }
 
     public LatLng getCoordinates() {
@@ -33,5 +50,17 @@ public class Place {
 
     public String getHistory() {
         return history;
+    }
+
+    public int[] getImages() {
+        return images;
+    }
+
+    public int getOldPhoto() {
+        return oldPhoto;
+    }
+
+    public int getNewPhoto() {
+        return newPhoto;
     }
 }

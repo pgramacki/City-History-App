@@ -20,11 +20,10 @@ public class InfoPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0: return InfoGalleryFragment.newInstance();
+            case 0: return InfoGalleryFragment.newInstance(
+                    extras.getInt(AppConstants.PLACE_ID));
             case 1: return InfoGeneralFragment.newInstance(
-                    extras.getInt(AppConstants.PLACE_ID),
-                    R.drawable.sample_0,
-                    R.drawable.sample_1);
+                    extras.getInt(AppConstants.PLACE_ID));
             default: return InfoHistoryFragment.newInstance(
                     extras.getInt(AppConstants.PLACE_ID));
         }

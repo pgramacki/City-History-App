@@ -16,19 +16,7 @@ import android.widget.GridView;
 
 public class InfoGalleryFragment extends Fragment {
     private GridView gridView;
-    private int[] images = {
-            R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5,
-            R.drawable.sample_6, R.drawable.sample_7,
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5,
-            R.drawable.sample_6, R.drawable.sample_7,
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5,
-            R.drawable.sample_6, R.drawable.sample_7
-    };
+    private int[] images;
     private OnPhotoClickListener listener;
 
     public interface OnPhotoClickListener {
@@ -45,16 +33,21 @@ public class InfoGalleryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_info_gallery, container, false);
 
+        setData();
         findViews(view);
         setListeners();
+
 
         return view;
     }
 
-    public static InfoGalleryFragment newInstance() {
+    public static InfoGalleryFragment newInstance(int index) {
         InfoGalleryFragment instance = new InfoGalleryFragment();
 
-        //TODO - add passing IDs of images
+        Bundle bundle = new Bundle();
+        bundle.putInt(AppConstants.PLACE_ID, index);
+
+        instance.setArguments(bundle);
 
         return instance;
     }
@@ -71,5 +64,9 @@ public class InfoGalleryFragment extends Fragment {
                 listener.onPhotoCLick(position);
             }
         });
+    }
+
+    private void setData() {
+        images = PlacesManager.getPlaces().get(getArguments().getInt(AppConstants.PLACE_ID)).getImages();
     }
 }
