@@ -75,8 +75,7 @@ public class MainActivity extends AppCompatActivity {
     private void readDataFromResources() {
         Resources res = getResources();
         try {
-            XmlResourceParser parser = res.getXml(R.xml.data);
-            PlacesManager.readFromXml(parser);
+            PlacesManager.readFromResources(res);
             places = PlacesManager.getPlaces();
         } catch (Exception e) {
             Toast.makeText(

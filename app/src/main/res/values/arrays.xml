@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="bachus">
+        <item>@drawable/bahus_old_1</item>
+        <item>@drawable/bahus_old_5</item>
+        <item>@drawable/bahus_old_2</item>
+        <item>@drawable/bahus_old_4</item>
+        <item>@drawable/bahus_old_3</item>
+        <item>@drawable/bahus_old_3</item>
+        <item>@drawable/bahus_old_4</item>
+        <item>@drawable/bahus_old_2</item>
+        <item>@drawable/bahus_old_5</item>
+        <item>@drawable/bahus_old_1</item>
+    </integer-array>
+
+    <integer-array name="braniborska">
+        <item>@drawable/braniborska_old_1</item>
+        <item>@drawable/braniborska_old_5</item>
+        <item>@drawable/braniborska_old_2</item>
+        <item>@drawable/braniborska_old_4</item>
+        <item>@drawable/braniborska_old_3</item>
+        <item>@drawable/braniborska_old_3</item>
+        <item>@drawable/braniborska_old_4</item>
+        <item>@drawable/braniborska_old_2</item>
+        <item>@drawable/braniborska_old_5</item>
+        <item>@drawable/braniborska_old_1</item>
+    </integer-array>
+
+    <integer-array name="focus">
+        <item>@drawable/focus_old_1</item>
+        <item>@drawable/focus_old_5</item>
+        <item>@drawable/focus_old_2</item>
+        <item>@drawable/focus_old_4</item>
+        <item>@drawable/focus_old_3</item>
+        <item>@drawable/focus_old_3</item>
+        <item>@drawable/focus_old_4</item>
+        <item>@drawable/focus_old_2</item>
+        <item>@drawable/focus_old_5</item>
+        <item>@drawable/focus_old_1</item>
+    </integer-array>
+
+    <integer-array name="jadwiga">
+        <item>@drawable/jadwiga_old_1</item>
+        <item>@drawable/jadwiga_old_5</item>
+        <item>@drawable/jadwiga_old_2</item>
+        <item>@drawable/jadwiga_old_4</item>
+        <item>@drawable/jadwiga_old_3</item>
+        <item>@drawable/jadwiga_old_3</item>
+        <item>@drawable/jadwiga_old_4</item>
+        <item>@drawable/jadwiga_old_2</item>
+        <item>@drawable/jadwiga_old_5</item>
+        <item>@drawable/jadwiga_old_1</item>
+    </integer-array>
+
+    <integer-array name="kino">
+        <item>@drawable/kino_old_1</item>
+        <item>@drawable/kino_old_5</item>
+        <item>@drawable/kino_old_2</item>
+        <item>@drawable/kino_old_4</item>
+        <item>@drawable/kino_old_3</item>
+        <item>@drawable/kino_old_3</item>
+        <item>@drawable/kino_old_4</item>
+        <item>@drawable/kino_old_2</item>
+        <item>@drawable/kino_old_5</item>
+        <item>@drawable/kino_old_1</item>
+    </integer-array>
+
+    <integer-array name="palmiarnia">
+        <item>@drawable/palmiarnia_old_1</item>
+        <item>@drawable/palmiarnia_old_5</item>
+        <item>@drawable/palmiarnia_old_2</item>
+        <item>@drawable/palmiarnia_old_4</item>
+        <item>@drawable/palmiarnia_old_3</item>
+        <item>@drawable/palmiarnia_old_3</item>
+        <item>@drawable/palmiarnia_old_4</item>
+        <item>@drawable/palmiarnia_old_2</item>
+        <item>@drawable/palmiarnia_old_5</item>
+        <item>@drawable/palmiarnia_old_1</item>
+    </integer-array>
+
+    <integer-array name="plac_boh">
+        <item>@drawable/plac_bohaterow_old_1</item>
+        <item>@drawable/plac_bohaterow_old_5</item>
+        <item>@drawable/plac_bohaterow_old_2</item>
+        <item>@drawable/plac_bohaterow_old_4</item>
+        <item>@drawable/plac_bohaterow_old_3</item>
+        <item>@drawable/plac_bohaterow_old_3</item>
+        <item>@drawable/plac_bohaterow_old_4</item>
+        <item>@drawable/plac_bohaterow_old_2</item>
+        <item>@drawable/plac_bohaterow_old_5</item>
+        <item>@drawable/plac_bohaterow_old_1</item>
+    </integer-array>
+
+    <integer-array name="poczta">
+        <item>@drawable/poczta_old_1</item>
+        <item>@drawable/poczta_old_5</item>
+        <item>@drawable/poczta_old_2</item>
+        <item>@drawable/poczta_old_4</item>
+        <item>@drawable/poczta_old_3</item>
+        <item>@drawable/poczta_old_3</item>
+        <item>@drawable/poczta_old_4</item>
+        <item>@drawable/poczta_old_2</item>
+        <item>@drawable/poczta_old_5</item>
+        <item>@drawable/poczta_old_1</item>
+    </integer-array>
+
+    <integer-array name="teatr">
+        <item>@drawable/teatr_old_1</item>
+        <item>@drawable/teatr_old_5</item>
+        <item>@drawable/teatr_old_2</item>
+        <item>@drawable/teatr_old_4</item>
+        <item>@drawable/teatr_old_3</item>
+        <item>@drawable/teatr_old_3</item>
+        <item>@drawable/teatr_old_4</item>
+        <item>@drawable/teatr_old_2</item>
+        <item>@drawable/teatr_old_5</item>
+        <item>@drawable/teatr_old_1</item>
+    </integer-array>
+
+    <integer-array name="wieza">
+        <item>@drawable/wieza_laziebna_old_1</item>
+        <item>@drawable/wieza_laziebna_old_5</item>
+        <item>@drawable/wieza_laziebna_old_2</item>
+        <item>@drawable/wieza_laziebna_old_4</item>
+        <item>@drawable/wieza_laziebna_old_3</item>
+        <item>@drawable/wieza_laziebna_old_3</item>
+        <item>@drawable/wieza_laziebna_old_4</item>
+        <item>@drawable/wieza_laziebna_old_2</item>
+        <item>@drawable/wieza_laziebna_old_5</item>
+        <item>@drawable/wieza_laziebna_old_1</item>
+    </integer-array>
+
+    <array name="photos">
+        <item>@array/bachus</item>
+        <item>@array/palmiarnia</item>
+        <item>@array/focus</item>
+        <item>@array/teatr</item>
+        <item>@array/plac_boh</item>
+        <item>@array/wieza</item>
+        <item>@array/poczta</item>
+        <item>@array/jadwiga</item>
+        <item>@array/braniborska</item>
+        <item>@array/kino</item>
+    </array>
+</resources>
