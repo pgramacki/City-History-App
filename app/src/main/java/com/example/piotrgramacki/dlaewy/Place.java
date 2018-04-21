@@ -64,3 +64,5 @@ public class Place {
         return newPhoto;
     }
 }
+
+//TODO - opisy do par zdjec, ew copyright pod zdjeciem, ew opis do rozbudowania, znalsc
