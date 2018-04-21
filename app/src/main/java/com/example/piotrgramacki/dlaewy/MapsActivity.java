@@ -9,6 +9,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap map;
-    private ArrayList<Pair<Marker, Place>> markers = new ArrayList<>();
+    private ArrayList<Marker> markers = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,14 +47,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public boolean onMarkerClick(Marker marker) {
                 for (int i = 0; i < markers.size(); i++) {
-                    if (markers.get(i).first.equals(marker)) {
+                    if (markers.get(i).equals(marker)) {
                         intent.putExtra(AppConstants.PLACE_ID, i);
                         startActivity(intent);
-                        return true;
+                        return false;
                     }
                 }
                 return false;
-                //TODO - maybe it is possible to remove storing pairs and keep only markers
             }
         });
     }
@@ -63,8 +63,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         for (Place p :
                 places) {
-            markers.add(new Pair<>(
-                    map.addMarker(new MarkerOptions().position(p.getCoordinates())), p));
+            markers.add(map.addMarker(new MarkerOptions().position(p.getCoordinates()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))));
         }
     }
 }

@@ -9,7 +9,7 @@ import com.google.android.gms.maps.model.LatLng;
 public class Place {
     private LatLng coordinates;
     private String name;
-    private String description;
+    private String[] description;
     private String history;
     private int[] images = {
             R.drawable.sample_2, R.drawable.sample_3,
@@ -27,7 +27,7 @@ public class Place {
     private int oldPhoto;
     private int newPhoto;
 
-    public Place(double latitude, double longitude, String name, String description, String history) {
+    public Place(double latitude, double longitude, String name, String[] description, String history) {
         this.coordinates = new LatLng(latitude, longitude);
         this.name = name;
         this.description = description;
@@ -44,8 +44,24 @@ public class Place {
         return name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getAddress() {
+        return description[AppConstants.DESCR_ADDRESS];
+    }
+
+    public String getYear() {
+        return description[AppConstants.DESCR_YEAR];
+    }
+
+    public String getArchitect() {
+        return description[AppConstants.DESCR_ARCH];
+    }
+
+    public String getThen() {
+        return description[AppConstants.DESCR_THEN];
+    }
+
+    public String getNow() {
+        return description[AppConstants.DESCR_NOW];
     }
 
     public String getHistory() {

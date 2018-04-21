@@ -8,6 +8,11 @@
     <string name="tab_gallery">GALLERY</string>
     <string name="tab_info">INFO</string>
     <string name="tab_history">HISTORY</string>
+    <string name="descr_address">ADRES: </string>
+    <string name="descr_year">ROK POWSTANIA: </string>
+    <string name="descr_arch">ARCHITEKT: </string>
+    <string name="descr_then">DAWNIEJ: </string>
+    <string name="descr_now">TERAZ: </string>
     <string name="some_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae
         pharetra purus, et faucibus ligula. Proin nec magna vel ligula. </string>
     <string name="lots_of_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam

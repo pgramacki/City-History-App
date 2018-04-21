@@ -10,12 +10,18 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 /**
  * Created by Piotrek on 2018-04-11.
  */
 
 public class InfoGeneralFragment extends Fragment {
-    TextView description;
+    TextView address;
+    TextView year;
+    TextView architect;
+    TextView then;
+    TextView now;
     ImageView oldPhoto;
     ImageView newPhoto;
 
@@ -30,7 +36,11 @@ public class InfoGeneralFragment extends Fragment {
     }
 
     private void findViews(View v) {
-        description = v.findViewById(R.id.info_general_text);
+        address = v.findViewById(R.id.info_general_address_data);
+        year = v.findViewById(R.id.info_general_year_data);
+        architect = v.findViewById(R.id.info_general_arch_data);
+        then = v.findViewById(R.id.info_general_then_data);
+        now = v.findViewById(R.id.info_general_now_data);
         oldPhoto = v.findViewById(R.id.info_general_photo_old);
         newPhoto = v.findViewById(R.id.info_general_photo_new);
 
@@ -45,9 +55,14 @@ public class InfoGeneralFragment extends Fragment {
 
     private void setData() {
         int index = getArguments().getInt(AppConstants.PLACE_ID);
-        description.setText(PlacesManager.getPlaces().get(index).getDescription());
-        oldPhoto.setImageResource(PlacesManager.getPlaces().get(index).getOldPhoto());
-        newPhoto.setImageResource(PlacesManager.getPlaces().get(index).getNewPhoto());
+        Place current = PlacesManager.getPlaces().get(index);
+        address.setText(current.getAddress());
+        year.setText(current.getYear());
+        architect.setText(current.getArchitect());
+        then.setText(current.getThen());
+        now.setText(current.getNow());
+        oldPhoto.setImageResource(current.getOldPhoto());
+        newPhoto.setImageResource(current.getNewPhoto());
     }
 
     public static InfoGeneralFragment newInstance(int index) {
