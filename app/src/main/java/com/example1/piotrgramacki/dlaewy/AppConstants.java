@@ -1,4 +1,4 @@
-package com.example.piotrgramacki.dlaewy;
+package com.example1.piotrgramacki.dlaewy;
 
 /**
  * Created by Piotrek on 2018-04-02.

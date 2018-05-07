@@ -1,16 +1,13 @@
-package com.example.piotrgramacki.dlaewy;
+package com.example1.piotrgramacki.dlaewy;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 /**
  * Created by Piotrek on 2018-04-11.

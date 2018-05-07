@@ -1,12 +1,10 @@
-package com.example.piotrgramacki.dlaewy;
+package com.example1.piotrgramacki.dlaewy;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.google.zxing.Result;
-
-import java.util.logging.Logger;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 

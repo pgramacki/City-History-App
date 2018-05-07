@@ -1,19 +1,13 @@
-package com.example.piotrgramacki.dlaewy;
+package com.example1.piotrgramacki.dlaewy;
 
 import android.content.Intent;
 import android.content.res.Resources;
-import android.content.res.XmlResourceParser;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {

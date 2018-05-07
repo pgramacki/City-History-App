@@ -1,4 +1,4 @@
-package com.example.piotrgramacki.dlaewy;
+package com.example1.piotrgramacki.dlaewy;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -38,9 +38,9 @@ public class InfoPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         //TODO - remove hardcoded strings!!!
         switch (position) {
-            case 0: return "GALLERY";
-            case 1: return "INFO";
-            default: return "HISTORY";
+            case 0: return "GALERIA";
+            case 1: return "OGÓLNE";
+            default: return "HISTORIA";
         }
     }
 }

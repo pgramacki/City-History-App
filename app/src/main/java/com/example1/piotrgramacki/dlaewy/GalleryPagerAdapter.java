@@ -1,4 +1,4 @@
-package com.example.piotrgramacki.dlaewy;
+package com.example1.piotrgramacki.dlaewy;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

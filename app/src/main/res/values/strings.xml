@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">DlaEwy</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="button_map">MAP</string>
+    <string name="app_name">Zielona Góra kiedyś</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="button_map">MAPA</string>
     <string name="button_qr">QR</string>
-    <string name="wrong_qr">WRONG QR CODE</string>
-    <string name="data_error">DATA ERROR</string>
-    <string name="tab_gallery">GALLERY</string>
-    <string name="tab_info">INFO</string>
-    <string name="tab_history">HISTORY</string>
+    <string name="wrong_qr">błędny kod qr</string>
+    <string name="data_error">jest źle</string>
+    <string name="tab_gallery">GALERIA</string>
+    <string name="tab_info">OGÓLNE</string>
+    <string name="tab_history">HISTORIA</string>
     <string name="descr_address">ADRES: </string>
     <string name="descr_year">ROK POWSTANIA: </string>
     <string name="descr_arch">ARCHITEKT: </string>

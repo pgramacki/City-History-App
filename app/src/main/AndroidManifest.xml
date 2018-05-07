@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.piotrgramacki.dlaewy">
+    package="com.example1.piotrgramacki.dlaewy">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -17,7 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example1.piotrgramacki.dlaewy.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,20 +37,20 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.example1.piotrgramacki.dlaewy.MapsActivity"
             android:label="@string/title_activity_maps"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.example1.piotrgramacki.dlaewy.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.piotrgramacki.dlaewy.MainActivity" />
+                android:value="com.example1.piotrgramacki.dlaewy.MainActivity" />
         </activity>
-        <activity android:name=".InfoActivity">
+        <activity android:name="com.example1.piotrgramacki.dlaewy.InfoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MapsActivity" />
+                android:value="com.example1.piotrgramacki.dlaewy.MapsActivity" />
         </activity>
-        <activity android:name=".QrCodeScannerActivity" />
-        <activity android:name=".GalleryActivity"></activity>
+        <activity android:name="com.example1.piotrgramacki.dlaewy.QrCodeScannerActivity" />
+        <activity android:name="com.example1.piotrgramacki.dlaewy.GalleryActivity"></activity>
     </application>
 
 </manifest>

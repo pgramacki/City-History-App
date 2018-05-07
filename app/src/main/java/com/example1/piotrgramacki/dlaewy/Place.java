@@ -1,4 +1,4 @@
-package com.example.piotrgramacki.dlaewy;
+package com.example1.piotrgramacki.dlaewy;
 
 import com.google.android.gms.maps.model.LatLng;
 

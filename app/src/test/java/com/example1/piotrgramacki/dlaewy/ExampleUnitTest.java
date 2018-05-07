@@ -1,4 +1,4 @@
-package com.example.piotrgramacki.dlaewy;
+package com.example1.piotrgramacki.dlaewy;
 
 import org.junit.Test;
 
