@@ -17,7 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example1.piotrgramacki.dlaewy.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,20 +37,21 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.example1.piotrgramacki.dlaewy.MapsActivity"
+            android:name=".MapsActivity"
             android:label="@string/title_activity_maps"
-            android:parentActivityName="com.example1.piotrgramacki.dlaewy.MainActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example1.piotrgramacki.dlaewy.MainActivity" />
         </activity>
-        <activity android:name="com.example1.piotrgramacki.dlaewy.InfoActivity">
+        <activity android:name=".InfoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example1.piotrgramacki.dlaewy.MapsActivity" />
         </activity>
-        <activity android:name="com.example1.piotrgramacki.dlaewy.QrCodeScannerActivity" />
-        <activity android:name="com.example1.piotrgramacki.dlaewy.GalleryActivity"></activity>
+        <activity android:name=".QrCodeScannerActivity" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".ListActivity"></activity>
     </application>
 
 </manifest>

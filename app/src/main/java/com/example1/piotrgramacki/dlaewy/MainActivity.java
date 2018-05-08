@@ -9,10 +9,12 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonMap;
     private Button buttonQr;
+    private Button buttonList;
     private ArrayList<Place> places;
 
     @Override
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private void findViews() {
         buttonMap = findViewById(R.id.button_map);
         buttonQr = findViewById(R.id.button_qr);
+        buttonList = findViewById(R.id.button_list);
     }
 
     private void setListeners() {
@@ -56,6 +59,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final Intent intentList = new Intent(this, ListActivity.class);
+        buttonList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intentList);
+            }
+        });
 
         final Intent intentQR = new Intent(this, QrCodeScannerActivity.class);
         buttonQr.setOnClickListener(new View.OnClickListener() {
